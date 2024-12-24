@@ -1,0 +1,25 @@
+.custom-3d-effect {
+  position: relative;
+  background-color: white;
+  padding: 0.5rem;
+  width: 12rem;
+  border: 2px solid white; 
+  box-shadow: 0 0 0 2px black;
+  margin-bottom: 1.5rem;
+}
+
+.custom-3d-effect::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: -4px;
+  bottom: -4px;
+  border-right: 4px solid black;
+  border-bottom: 4px solid black;
+  box-shadow: 4px 4px 0 0 black; 
+  z-index: -1;
+}
+.custom-shadow {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
